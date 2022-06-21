@@ -4,6 +4,7 @@ import Masonry from 'react-masonry-css'
 import NextImage from "next/image";
 import A from "components/a";
 
+// @ts-ignore
 const fetcher = (...args: any[]) => fetch(...args).then(res => res.json())
 
 function Photos() {
@@ -21,6 +22,7 @@ function Photos() {
             breakpointCols={3}
             className="my-masonry-grid"
             columnClassName="my-masonry-grid_column">
+            {/* @ts-ignore */}
             {data.results.map((item) => {
                 return (
                     <div key={item.id} className="photos-item mb-8">

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const PageTransition = (props) => (
+const PageTransition = (props: any) => (
     <motion.div
         initial={{ y: 5, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

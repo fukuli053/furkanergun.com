@@ -1,7 +1,7 @@
-import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import NextDocument, { Html, Head, Main, NextScript, DocumentContext} from "next/document";
 
 export default class MyDocument extends NextDocument {
-    static getInitialProps(ctx) {
+    static getInitialProps(ctx: DocumentContext) {
         return NextDocument.getInitialProps(ctx);
     }
 
